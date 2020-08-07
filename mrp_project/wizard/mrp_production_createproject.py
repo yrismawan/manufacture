@@ -6,6 +6,7 @@ from odoo.exceptions import UserError
 class MrpProductionCreateProject(models.TransientModel):
     """ wizard to create a Project from a Manufacturing Order """
     _name = "mrp.production.createproject"
+    _description = "MO Create Project Wizard"
 
     @api.model
     def default_get(self, fields):
